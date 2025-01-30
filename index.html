@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Living Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e2ce180969.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    
+.font-sora{
+  font-family: "Sora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+</style>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'btn-primary': '#179800',
+            'bg-color':'#EFEBE3'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sora  max-w-screen-xl mx-auto">
+    <header class="mb-8 lg:mb-36 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+        <nav class="mb-12">
+            <div class="navbar  ">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li class="text-[#111111]"><a>Product</a></li>
+                      <li>
+                        <a>Services</a>
+                      </li>
+                      <li><a>Contact us</a></li>
+                    </ul>
+                  </div>
+                 
+                    <img src="c2-assets/logo-header.png" alt="">
+                
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-[#111111] text-[18px]"><a>Product</a></li>
+                    <li class="text-[#111111] text-[18px]">
+                      <a>Services</a>
+                    </li>
+                    <li class="text-[#111111] text-[18px]"><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end hidden lg:flex">
+                    <div class="flex flex-row items-center gap-6 mr-4">
+                        <div class=""><i class="fa-solid fa-cart-shopping text-xl"></i></div>
+                    <div class=""><i class="fa-solid fa-magnifying-glass text-xl"></i></div>
+                    </div>
+                  <a class="btn border-1 border-green-600 ">Login</a>
+                  <a class="btn ml-3 bg-btn-primary text-white">Register</a>
+                </div>
+              </div>
+              <hr class="bg-green-600 h-1 lg:hidden md:hidden">
+        </nav>
+        <div>
+            <h1 class="text-5xl text-center font-semibold text-[#111111] mb-8">Freshness <span class="text-[#179800]">You Can <br>
+                Count</span>  On, Prices You’ll Love!</h1>
+                <p class="text-[#111111] text-center lg:w-3/6 w-[350px] mx-auto mb-4 lg:mb-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+                <div><img class="w-full lg:w-3/4 mx-auto" src="c2-assets/hero-vegetables.png" alt=""></div>
+        </div>
+    </header>
+    <main>
+              <section class="mb-24 mx-4">
+                 <h1 class="font-semibold text-3xl text-[#179800] mb-8 lg:mb-12">Services</h1>
+                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                      <div class="bg-bg-color flex flex-col items-center p-8 space-y-4 rounded-lg shadow-md">
+                        <div class="w-[150px] h-[150px] bg-white rounded-full">
+                        <div class="p-6"><img  src="c2-assets/service.png" alt=""></div>
+                        </div>
+                         <h3 class="text-2xl text-black font-semibold">24/7 Services </h3>
+                         <p class="text-[#111111] text-center w-3/4 lg:w-[360px]">24/7 service might be offered by a supermarket, convenience store, ATM, automated online assistant.</p>
+                      </div>
+                      <div class="bg-bg-color flex flex-col items-center p-8 space-y-4 rounded-lg shadow-md">
+                        <div class="w-[150px] h-[150px] bg-white rounded-full">
+                        <div class="p-6"><img  src="c2-assets/delivery.png" alt=""></div>
+                        </div>
+                         <h3 class="text-2xl text-black font-semibold">Fast Delivery </h3>
+                         <p class="text-[#111111] text-center  w-3/4 lg:w-[360px]">24/7 service might be offered by a supermarket, convenience store, ATM, automated online assistant.</p>
+                      </div>
+                      <div class="bg-bg-color flex flex-col items-center p-8 space-y-4 rounded-lg shadow-md">
+                        <div class="w-[150px] h-[150px] bg-white rounded-full">
+                        <div class="p-6"><img  src="c2-assets/healthy.png" alt=""></div>
+                        </div>
+                         <h3 class="text-2xl text-black font-semibold">Healthy Products </h3>
+                         <p class="text-[#111111] text-center  w-3/4 lg:w-[360px]">24/7 service might be offered by a supermarket, convenience store, ATM, automated online assistant.</p>
+                      </div>
+                 </div>
+              </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
