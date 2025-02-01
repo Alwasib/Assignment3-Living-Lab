@@ -21,6 +21,21 @@
 .font-poppins{
   font-family: "Poppins", serif;
 }
+@keyframes slideRight {
+            from {
+                transform: rotateY(-60deg);
+                
+            }
+            to {
+                transform: rotateY(60deg);
+                
+            }
+        }
+
+        .animate-slide-right {
+            animation: slideRight 3s ease-in-out infinite;
+        }
+
 </style>
 <script>
     tailwind.config = {
@@ -34,15 +49,25 @@
             'bg-color3':'#63B76D',
             'bg-color4':'#102861',
             'bg-color5':'#2A4D97'
-          }
+          },
+          keyframes: {
+        'from': {
+          '0%': { opacity: '0', transform: 'translateY(-20px)' },
+          '50%': { opacity: '1', transform: 'translateY(0)' },
+          '100%': { opacity: '0', transform: 'translateY(20px)' },
+        },
+      },
+      animation: {
+        'animation-2': 'from 2s ease-in infinite',
+      },
         }
       }
     }
   </script>
 </head>
-<body class="font-sora">
+<body class="font-sora ">
     <header class="mb-8 max-w-screen-xl  mx-auto lg:mb-36 bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
-      <div class="navbar">
+      <div class="navbar mb-0 lg:mb-20">
         <div class="navbar">
            
             <img src="c2-assets/logo-header.png" alt="">
@@ -85,7 +110,7 @@
                   
                   <div class="lg:space-x-5 lg:px-4">
                     <i class="fa-solid fa-magnifying-glass text-xl"></i>
-                  <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                    <i class="fa fa-shopping-cart text-xl"></i>
                   </div>
                   <a class="btn border-1 border-green-600 ">Login</a>
               <a class="btn ml-3 bg-btn-primary text-white">Register</a>
@@ -98,15 +123,16 @@
             
             <hr class="bg-green-600 h-1 lg:hidden md:hidden">
   
-        <div>
-            <h1 class="text-5xl text-center font-semibold text-[#111111] mb-8">Freshness <span class="text-[#179800]">You Can <br>
+        <div >
+            <h1 class="text-5xl text-center font-semibold text-[#111111] mb-8 animate-slide-right ">Freshness <span class="text-[#179800]">You Can <br>
                 Count</span>  On, Prices You’ll Love!</h1>
-                <p class="text-[#111111] text-center lg:w-3/6 w-[350px] mx-auto mb-4 lg:mb-8">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
-                <div><img class="w-full lg:w-3/4 mx-auto" src="c2-assets/hero-vegetables.png" alt=""></div>
+                <p class="text-[#111111] text-center lg:w-3/6 w-[350px] mx-auto mb-4 lg:mb-8 animate-animation-2">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
+
+                <div><img class="w-full lg:w-3/4 mx-auto " src="c2-assets/hero-vegetables.png" alt=""></div>
         </div>
     </header>
     <main>
-              <section class="max-w-screen-xl  mx-auto lg:mb-36 mb-12 px-4">
+              <section class="max-w-screen-xl  mx-auto lg:mb-36 mb-12 px-4 lg:px-0">
                  <h1 class="font-semibold text-3xl text-[#179800] mb-8 lg:mb-12">Services</h1>
                  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                       <div class="bg-bg-color flex flex-col items-center p-8 space-y-4 rounded-lg shadow-md">
@@ -146,7 +172,7 @@
                        </div>
                     </div>
                     <div class="grid grid-cols-2 lg:grid-cols-3 gap-6 lg:w-[872px] lg:h-[400px]">
-                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg">
+                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg shadow-lg">
                               <div class="bg-bg-color flex flex-col items-center justify-center rounded-md"><img src="c2-assets/image 43.png" alt=""></div>
                               <div class="space-y-1">
                                 <div class="flex flex-row gap-2">
@@ -157,7 +183,7 @@
                                 <p>$39.99</p>
                               </div>
                             </div>
-                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg">
+                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg shadow-lg">
                               <div class="bg-bg-color flex flex-col items-center justify-center rounded-md"><img src="c2-assets/image 41.png" alt=""></div>
                               <div class="space-y-1">
                                 <div class="flex flex-row gap-2">
@@ -168,7 +194,7 @@
                                 <p>$39.99</p>
                               </div>
                             </div>
-                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg">
+                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg shadow-lg">
                               <div class="bg-bg-color flex flex-col items-center justify-center rounded-md"><img src="c2-assets/image 44.png" alt=""></div>
                               <div class="space-y-1">
                                 <div class="flex flex-row gap-2">
@@ -179,7 +205,7 @@
                                 <p>$39.99</p>
                               </div>
                             </div>
-                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg">
+                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg shadow-lg">
                               <div class="bg-bg-color flex flex-col items-center justify-center rounded-md"><img src="c2-assets/image 41.png" alt=""></div>
                               <div class="space-y-1">
                                 <div class="flex flex-row gap-2">
@@ -190,7 +216,7 @@
                                 <p>$39.99</p>
                               </div>
                             </div>
-                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg">
+                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg shadow-lg">
                               <div class="bg-bg-color flex flex-col items-center justify-center rounded-md"><img src="c2-assets/image 43.png" alt=""></div>
                               <div class="space-y-1">
                                 <div class="flex flex-row gap-2">
@@ -201,7 +227,7 @@
                                 <p>$39.99</p>
                               </div>
                             </div>
-                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg">
+                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg shadow-lg">
                               <div class="bg-bg-color flex flex-col items-center justify-center rounded-md"><img src="c2-assets/image 41.png" alt=""></div>
                               <div class="space-y-1">
                                 <div class="flex flex-row gap-2">
@@ -212,7 +238,7 @@
                                 <p>$39.99</p>
                               </div>
                             </div>
-                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg">
+                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg shadow-lg">
                               <div class="bg-bg-color flex flex-col items-center justify-center rounded-md"><img src="c2-assets/image 43.png" alt=""></div>
                               <div class="space-y-1">
                                 <div class="flex flex-row gap-2">
@@ -223,7 +249,7 @@
                                 <p>$39.99</p>
                               </div>
                             </div>
-                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg">
+                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg shadow-lg">
                               <div class="bg-bg-color flex flex-col items-center justify-center rounded-md"><img src="c2-assets/image 44.png" alt=""></div>
                               <div class="space-y-1">
                                 <div class="flex flex-row gap-2">
@@ -234,7 +260,7 @@
                                 <p>$39.99</p>
                               </div>
                             </div>
-                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg">
+                            <div class="flex flex-row bg-white py-4 gap-4 pl-4 pr-8 rounded-lg shadow-lg">
                               <div class="bg-bg-color flex flex-col items-center justify-center rounded-md"><img src="c2-assets/image 44.png" alt=""></div>
                               <div class="space-y-1">
                                 <div class="flex flex-row gap-2">
@@ -248,7 +274,7 @@
                     </div>
                    </div>
               </section>
-              <section class="max-w-screen-xl  mx-auto mb-12 lg:mb-24 px-4">
+              <section class="max-w-screen-xl  mx-auto mb-12 lg:mb-24 px-4 lg:px-0">
                 <h3 class="font-semibold text-3xl text-[#179800] pt-4 lg:pt-16 mb-6 lg:mb-12">Arrival & Offers</h3>
                 <div class="flex flex-col lg:flex-row gap-5">
                   <div class=" flex flex-row lg:w-[780px] bg-bg-color2 py-3 lg:py-8 rounded-[14px] items-center h-[344px]">
@@ -277,7 +303,7 @@
                   </div>
                 </div>
               </section>
-              <section class="max-w-screen-xl mx-auto mb-96">
+              <section class="max-w-screen-xl mx-auto mb-96 px-4 lg:px-0">
                          <h1 class="font-semibold text-3xl text-[#179800] text-center mb-4">The Six Criteria of living lab</h1>
                          <p class="text-[#111111] text-center lg:w-3/6 w-[350px] mx-auto mb-4 lg:mb-12">End users must be actively <span class="text-[#179800]">engaged throughout</span> the innovation process, <span class="text-[#179800]">providing f<span class="text-[#63B76D]">ee</span>dback</span> and contributing to design decisions.</p>
                          <hr class="bg-green-600 h-1  lg:hidden md:hidden">
@@ -471,7 +497,7 @@
               </section>     
     </main>
     <footer  class="relative">
-      <section class="max-w-screen-xl mx-auto absolute -top-[350px] lg:-top-60 lg:left-32 w-full lg:w-[1320px] bg-bg-color rounded-xl  ">
+      <section class="max-w-screen-xl lg:mx-auto absolute -top-[350px] lg:-top-60 lg:left-32 w-full lg:w-[1320px] bg-bg-color rounded-xl ">
         <div class="flex flex-col lg:flex-row  items-center p-8 lg:p-16 gap-20 lg:gap-32">
          <div>
            <img src="c2-assets/vegetable-busket.png" alt="">
@@ -485,7 +511,7 @@
          </div>
         </div>
    </section>
-     <div  class="lg:h-[660px] bg-btn-primary mb-8 ">
+     <div  class="lg:h-[660px] bg-btn-primary">
       <div class="lg:w-[1320px] mx-auto flex flex-col lg:flex-row gap-8 lg:gap-32 pt-[374px] pl-8 pb-12">
         <div class="">
           <img src="c2-assets/Vector.png" alt="">
